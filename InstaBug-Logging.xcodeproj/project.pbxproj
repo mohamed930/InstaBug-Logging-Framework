@@ -124,13 +124,10 @@
 		D37ED1DC266605C000B5EDDD /* Loggin */ = {
 			isa = PBXGroup;
 			children = (
-				D37ED1DD266605C000B5EDDD /* AppDelegate.swift */,
-				D37ED1DF266605C000B5EDDD /* SceneDelegate.swift */,
-				D37ED1E1266605C000B5EDDD /* ViewController.swift */,
-				D37ED1E3266605C000B5EDDD /* Main.storyboard */,
-				D37ED1E6266605C800B5EDDD /* Assets.xcassets */,
-				D37ED1E8266605C800B5EDDD /* LaunchScreen.storyboard */,
-				D37ED1EB266605C800B5EDDD /* Info.plist */,
+				D37ED20C2666192500B5EDDD /* AppDelegate */,
+				D37ED20D2666193500B5EDDD /* Controllers */,
+				D37ED20E2666193C00B5EDDD /* Views */,
+				D37ED20F2666194600B5EDDD /* Resources */,
 			);
 			path = Loggin;
 			sourceTree = "<group>";
@@ -194,6 +191,41 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D37ED20C2666192500B5EDDD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1DD266605C000B5EDDD /* AppDelegate.swift */,
+				D37ED1DF266605C000B5EDDD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D37ED20D2666193500B5EDDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1E1266605C000B5EDDD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D37ED20E2666193C00B5EDDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1E3266605C000B5EDDD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D37ED20F2666194600B5EDDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1E6266605C800B5EDDD /* Assets.xcassets */,
+				D37ED1E8266605C800B5EDDD /* LaunchScreen.storyboard */,
+				D37ED1EB266605C800B5EDDD /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,7 +572,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4YZSY77G5;
-				INFOPLIST_FILE = Loggin/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Loggin/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,7 +580,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization199.Loggin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -559,7 +591,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4YZSY77G5;
-				INFOPLIST_FILE = Loggin/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Loggin/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +599,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization199.Loggin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
