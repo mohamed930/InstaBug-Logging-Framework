@@ -7,17 +7,31 @@
 
 import UIKit
 import InstaBug_Logging
+import CoreData
 
 class ViewController: UIViewController {
+    
+    var LoggingMessageArr = Array<NSManagedObject>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MyLogger.addLogProfileToAllLevels(defaultLoggerProfile: LoggerConsole())
+//        MyLogger.addLogProfileToAllLevels(defaultLoggerProfile: LoggerConsole())
+//
+//        MyLogger.writeLog(logLevel: LogLevels.Debug, message: "Debug Message 1")
+//
+//        MyLogger.writeLog(logLevel: LogLevels.Error, message: "Error Message 1")
         
-        MyLogger.writeLog(logLevel: LogLevels.Debug, message: "Debug Message 1")
-
-        MyLogger.writeLog(logLevel: LogLevels.Error, message: "Error Message 1")
+        let ob = CoreDataViewModel()
+        
+        guard let LoggingMessage = ob.fetch() else {
+            return
+        }
+        LoggingMessageArr = LoggingMessage
+        
+        for i in LoggingMessageArr {
+            print("LogMess: \(i.value(forKeyPath: "loggingMessage") as! String)")
+        }
         
     }
 

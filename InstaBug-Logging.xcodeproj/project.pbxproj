@@ -24,6 +24,8 @@
 		D37ED2052666129F00B5EDDD /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED2042666129F00B5EDDD /* MyLogger.swift */; };
 		D37ED2072666138200B5EDDD /* InstaBug_Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */; };
 		D37ED2082666138200B5EDDD /* InstaBug_Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D37ED21226661C8100B5EDDD /* LoggingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D37ED21026661C8100B5EDDD /* LoggingModel.xcdatamodeld */; };
+		D37ED21726661DED00B5EDDD /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED21626661DED00B5EDDD /* CoreDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		D37ED1FF26660D9400B5EDDD /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D37ED20126660DAE00B5EDDD /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
 		D37ED2042666129F00B5EDDD /* MyLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger.swift; sourceTree = "<group>"; };
+		D37ED21126661C8100B5EDDD /* LoggingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoggingModel.xcdatamodel; sourceTree = "<group>"; };
+		D37ED21626661DED00B5EDDD /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				D37ED1FB26660D4200B5EDDD /* Logging Profile */,
 				D37ED1CF266605AA00B5EDDD /* InstaBug_Logging.h */,
 				D37ED1D0266605AA00B5EDDD /* Info.plist */,
+				D37ED21026661C8100B5EDDD /* LoggingModel.xcdatamodeld */,
 			);
 			path = "InstaBug-Logging";
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		D37ED1EF266605DD00B5EDDD /* Logging Structure */ = {
 			isa = PBXGroup;
 			children = (
+				D37ED21326661D8800B5EDDD /* CoreData */,
 				D37ED1F0266608A200B5EDDD /* Protocol Logger Protfile + Extension */,
 				D37ED1F526660A4A00B5EDDD /* LoggerNull + LoggerConsole */,
 			);
@@ -226,6 +232,14 @@
 				D37ED1EB266605C800B5EDDD /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D37ED21326661D8800B5EDDD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED21626661DED00B5EDDD /* CoreDataViewModel.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +357,9 @@
 			files = (
 				D37ED1F2266608C700B5EDDD /* LoggerProfile.swift in Sources */,
 				D37ED20026660D9400B5EDDD /* Logger.swift in Sources */,
+				D37ED21726661DED00B5EDDD /* CoreDataViewModel.swift in Sources */,
 				D37ED1F726660A9100B5EDDD /* LoggerNull.swift in Sources */,
+				D37ED21226661C8100B5EDDD /* LoggingModel.xcdatamodeld in Sources */,
 				D37ED1F4266608F400B5EDDD /* LoggerProfileExtension.swift in Sources */,
 				D37ED1FE26660D7A00B5EDDD /* LogLevels.swift in Sources */,
 				D37ED20226660DAE00B5EDDD /* LoggerExtension.swift in Sources */,
@@ -634,6 +650,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D37ED21026661C8100B5EDDD /* LoggingModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D37ED21126661C8100B5EDDD /* LoggingModel.xcdatamodel */,
+			);
+			currentVersion = D37ED21126661C8100B5EDDD /* LoggingModel.xcdatamodel */;
+			path = LoggingModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D37ED1C3266605AA00B5EDDD /* Project object */;
 }

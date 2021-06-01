@@ -15,5 +15,9 @@ public struct LoggerConsole: LoggerProfile {
     public func writelog(level: String, message: String) {
         let now = getCurrentDateString()
         print("\(now): \(level) - \(message)")
+        
+        let ob = CoreDataViewModel()
+        ob.createLogging(loggingDate: now, loggingMessage: message, loggingType: level)
+        
     }
 }
