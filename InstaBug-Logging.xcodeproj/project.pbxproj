@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31609A82666FCB000420437 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31609A72666FCB000420437 /* String.swift */; };
 		D37ED1D1266605AA00B5EDDD /* InstaBug_Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = D37ED1CF266605AA00B5EDDD /* InstaBug_Logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D37ED1DE266605C000B5EDDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1DD266605C000B5EDDD /* AppDelegate.swift */; };
 		D37ED1E0266605C000B5EDDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1DF266605C000B5EDDD /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D31609A72666FCB000420437 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstaBug_Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37ED1CF266605AA00B5EDDD /* InstaBug_Logging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaBug_Logging.h; sourceTree = "<group>"; };
 		D37ED1D0266605AA00B5EDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D31609A62666FCA500420437 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D31609A72666FCB000420437 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D37ED1C2266605AA00B5EDDD = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 		D37ED1CE266605AA00B5EDDD /* InstaBug-Logging */ = {
 			isa = PBXGroup;
 			children = (
+				D31609A62666FCA500420437 /* Extensions */,
 				D37ED1EF266605DD00B5EDDD /* Logging Structure */,
 				D37ED1FB26660D4200B5EDDD /* Logging Profile */,
 				D37ED1CF266605AA00B5EDDD /* InstaBug_Logging.h */,
@@ -356,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37ED1F2266608C700B5EDDD /* LoggerProfile.swift in Sources */,
+				D31609A82666FCB000420437 /* String.swift in Sources */,
 				D37ED20026660D9400B5EDDD /* Logger.swift in Sources */,
 				D37ED21726661DED00B5EDDD /* CoreDataViewModel.swift in Sources */,
 				D37ED1F726660A9100B5EDDD /* LoggerNull.swift in Sources */,

@@ -71,7 +71,7 @@ public class CoreDataViewModel {
 //        }
             
         } catch let fetchErr {
-            print("❌ Failed to fetch Person:",fetchErr)
+            print("❌ Failed to fetch Logging:",fetchErr)
         }
         return nil
     }
