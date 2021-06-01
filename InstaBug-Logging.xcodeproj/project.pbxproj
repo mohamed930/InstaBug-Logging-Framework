@@ -8,12 +8,68 @@
 
 /* Begin PBXBuildFile section */
 		D37ED1D1266605AA00B5EDDD /* InstaBug_Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = D37ED1CF266605AA00B5EDDD /* InstaBug_Logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D37ED1DE266605C000B5EDDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1DD266605C000B5EDDD /* AppDelegate.swift */; };
+		D37ED1E0266605C000B5EDDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1DF266605C000B5EDDD /* SceneDelegate.swift */; };
+		D37ED1E2266605C000B5EDDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1E1266605C000B5EDDD /* ViewController.swift */; };
+		D37ED1E5266605C000B5EDDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37ED1E3266605C000B5EDDD /* Main.storyboard */; };
+		D37ED1E7266605C800B5EDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37ED1E6266605C800B5EDDD /* Assets.xcassets */; };
+		D37ED1EA266605C800B5EDDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37ED1E8266605C800B5EDDD /* LaunchScreen.storyboard */; };
+		D37ED1F2266608C700B5EDDD /* LoggerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1F1266608C700B5EDDD /* LoggerProfile.swift */; };
+		D37ED1F4266608F400B5EDDD /* LoggerProfileExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1F3266608F400B5EDDD /* LoggerProfileExtension.swift */; };
+		D37ED1F726660A9100B5EDDD /* LoggerNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1F626660A9100B5EDDD /* LoggerNull.swift */; };
+		D37ED1F926660AAD00B5EDDD /* LoggerConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1F826660AAD00B5EDDD /* LoggerConsole.swift */; };
+		D37ED1FE26660D7A00B5EDDD /* LogLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1FD26660D7A00B5EDDD /* LogLevels.swift */; };
+		D37ED20026660D9400B5EDDD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED1FF26660D9400B5EDDD /* Logger.swift */; };
+		D37ED20226660DAE00B5EDDD /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED20126660DAE00B5EDDD /* LoggerExtension.swift */; };
+		D37ED2052666129F00B5EDDD /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ED2042666129F00B5EDDD /* MyLogger.swift */; };
+		D37ED2072666138200B5EDDD /* InstaBug_Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */; };
+		D37ED2082666138200B5EDDD /* InstaBug_Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D37ED2092666138200B5EDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D37ED1C3266605AA00B5EDDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D37ED1CB266605AA00B5EDDD;
+			remoteInfo = "InstaBug-Logging";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D37ED20B2666138300B5EDDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D37ED2082666138200B5EDDD /* InstaBug_Logging.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstaBug_Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37ED1CF266605AA00B5EDDD /* InstaBug_Logging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaBug_Logging.h; sourceTree = "<group>"; };
 		D37ED1D0266605AA00B5EDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D37ED1DB266605C000B5EDDD /* Loggin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loggin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37ED1DD266605C000B5EDDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D37ED1DF266605C000B5EDDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D37ED1E1266605C000B5EDDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D37ED1E4266605C000B5EDDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D37ED1E6266605C800B5EDDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D37ED1E9266605C800B5EDDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D37ED1EB266605C800B5EDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D37ED1F1266608C700B5EDDD /* LoggerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProfile.swift; sourceTree = "<group>"; };
+		D37ED1F3266608F400B5EDDD /* LoggerProfileExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProfileExtension.swift; sourceTree = "<group>"; };
+		D37ED1F626660A9100B5EDDD /* LoggerNull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerNull.swift; sourceTree = "<group>"; };
+		D37ED1F826660AAD00B5EDDD /* LoggerConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerConsole.swift; sourceTree = "<group>"; };
+		D37ED1FD26660D7A00B5EDDD /* LogLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevels.swift; sourceTree = "<group>"; };
+		D37ED1FF26660D9400B5EDDD /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		D37ED20126660DAE00B5EDDD /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
+		D37ED2042666129F00B5EDDD /* MyLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +80,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D37ED1D8266605C000B5EDDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37ED2072666138200B5EDDD /* InstaBug_Logging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,7 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				D37ED1CE266605AA00B5EDDD /* InstaBug-Logging */,
+				D37ED1DC266605C000B5EDDD /* Loggin */,
 				D37ED1CD266605AA00B5EDDD /* Products */,
+				D37ED2062666138200B5EDDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */,
+				D37ED1DB266605C000B5EDDD /* Loggin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +113,87 @@
 		D37ED1CE266605AA00B5EDDD /* InstaBug-Logging */ = {
 			isa = PBXGroup;
 			children = (
+				D37ED1EF266605DD00B5EDDD /* Logging Structure */,
+				D37ED1FB26660D4200B5EDDD /* Logging Profile */,
 				D37ED1CF266605AA00B5EDDD /* InstaBug_Logging.h */,
 				D37ED1D0266605AA00B5EDDD /* Info.plist */,
 			);
 			path = "InstaBug-Logging";
+			sourceTree = "<group>";
+		};
+		D37ED1DC266605C000B5EDDD /* Loggin */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1DD266605C000B5EDDD /* AppDelegate.swift */,
+				D37ED1DF266605C000B5EDDD /* SceneDelegate.swift */,
+				D37ED1E1266605C000B5EDDD /* ViewController.swift */,
+				D37ED1E3266605C000B5EDDD /* Main.storyboard */,
+				D37ED1E6266605C800B5EDDD /* Assets.xcassets */,
+				D37ED1E8266605C800B5EDDD /* LaunchScreen.storyboard */,
+				D37ED1EB266605C800B5EDDD /* Info.plist */,
+			);
+			path = Loggin;
+			sourceTree = "<group>";
+		};
+		D37ED1EF266605DD00B5EDDD /* Logging Structure */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1F0266608A200B5EDDD /* Protocol Logger Protfile + Extension */,
+				D37ED1F526660A4A00B5EDDD /* LoggerNull + LoggerConsole */,
+			);
+			path = "Logging Structure";
+			sourceTree = "<group>";
+		};
+		D37ED1F0266608A200B5EDDD /* Protocol Logger Protfile + Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1F1266608C700B5EDDD /* LoggerProfile.swift */,
+				D37ED1F3266608F400B5EDDD /* LoggerProfileExtension.swift */,
+			);
+			path = "Protocol Logger Protfile + Extension";
+			sourceTree = "<group>";
+		};
+		D37ED1F526660A4A00B5EDDD /* LoggerNull + LoggerConsole */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1F626660A9100B5EDDD /* LoggerNull.swift */,
+				D37ED1F826660AAD00B5EDDD /* LoggerConsole.swift */,
+			);
+			path = "LoggerNull + LoggerConsole";
+			sourceTree = "<group>";
+		};
+		D37ED1FB26660D4200B5EDDD /* Logging Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1FC26660D5400B5EDDD /* Logger + Loglevels */,
+				D37ED2032666127200B5EDDD /* MyLogger Structure */,
+			);
+			path = "Logging Profile";
+			sourceTree = "<group>";
+		};
+		D37ED1FC26660D5400B5EDDD /* Logger + Loglevels */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED1FD26660D7A00B5EDDD /* LogLevels.swift */,
+				D37ED1FF26660D9400B5EDDD /* Logger.swift */,
+				D37ED20126660DAE00B5EDDD /* LoggerExtension.swift */,
+			);
+			path = "Logger + Loglevels";
+			sourceTree = "<group>";
+		};
+		D37ED2032666127200B5EDDD /* MyLogger Structure */ = {
+			isa = PBXGroup;
+			children = (
+				D37ED2042666129F00B5EDDD /* MyLogger.swift */,
+			);
+			path = "MyLogger Structure";
+			sourceTree = "<group>";
+		};
+		D37ED2062666138200B5EDDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,15 +228,39 @@
 			productReference = D37ED1CC266605AA00B5EDDD /* InstaBug_Logging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D37ED1DA266605C000B5EDDD /* Loggin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D37ED1EC266605C800B5EDDD /* Build configuration list for PBXNativeTarget "Loggin" */;
+			buildPhases = (
+				D37ED1D7266605C000B5EDDD /* Sources */,
+				D37ED1D8266605C000B5EDDD /* Frameworks */,
+				D37ED1D9266605C000B5EDDD /* Resources */,
+				D37ED20B2666138300B5EDDD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D37ED20A2666138200B5EDDD /* PBXTargetDependency */,
+			);
+			name = Loggin;
+			productName = Loggin;
+			productReference = D37ED1DB266605C000B5EDDD /* Loggin.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D37ED1C3266605AA00B5EDDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					D37ED1CB266605AA00B5EDDD = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					D37ED1DA266605C000B5EDDD = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -111,6 +279,7 @@
 			projectRoot = "";
 			targets = (
 				D37ED1CB266605AA00B5EDDD /* InstaBug-Logging */,
+				D37ED1DA266605C000B5EDDD /* Loggin */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +292,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D37ED1D9266605C000B5EDDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37ED1EA266605C800B5EDDD /* LaunchScreen.storyboard in Resources */,
+				D37ED1E7266605C800B5EDDD /* Assets.xcassets in Resources */,
+				D37ED1E5266605C000B5EDDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -130,10 +309,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37ED1F2266608C700B5EDDD /* LoggerProfile.swift in Sources */,
+				D37ED20026660D9400B5EDDD /* Logger.swift in Sources */,
+				D37ED1F726660A9100B5EDDD /* LoggerNull.swift in Sources */,
+				D37ED1F4266608F400B5EDDD /* LoggerProfileExtension.swift in Sources */,
+				D37ED1FE26660D7A00B5EDDD /* LogLevels.swift in Sources */,
+				D37ED20226660DAE00B5EDDD /* LoggerExtension.swift in Sources */,
+				D37ED1F926660AAD00B5EDDD /* LoggerConsole.swift in Sources */,
+				D37ED2052666129F00B5EDDD /* MyLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37ED1D7266605C000B5EDDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37ED1E2266605C000B5EDDD /* ViewController.swift in Sources */,
+				D37ED1DE266605C000B5EDDD /* AppDelegate.swift in Sources */,
+				D37ED1E0266605C000B5EDDD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D37ED20A2666138200B5EDDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D37ED1CB266605AA00B5EDDD /* InstaBug-Logging */;
+			targetProxy = D37ED2092666138200B5EDDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D37ED1E3266605C000B5EDDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37ED1E4266605C000B5EDDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D37ED1E8266605C800B5EDDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37ED1E9266605C800B5EDDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D37ED1D2266605AA00B5EDDD /* Debug */ = {
@@ -261,6 +485,33 @@
 		D37ED1D5266605AA00B5EDDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X4YZSY77G5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "InstaBug-Logging/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myorganization199.InstaBug-Logging";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D37ED1D6266605AA00B5EDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X4YZSY77G5;
@@ -280,27 +531,41 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		D37ED1D6266605AA00B5EDDD /* Release */ = {
+		D37ED1ED266605C800B5EDDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X4YZSY77G5;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "InstaBug-Logging/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = Loggin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myorganization199.InstaBug-Logging";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization199.Loggin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D37ED1EE266605C800B5EDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4YZSY77G5;
+				INFOPLIST_FILE = Loggin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization199.Loggin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +588,15 @@
 			buildConfigurations = (
 				D37ED1D5266605AA00B5EDDD /* Debug */,
 				D37ED1D6266605AA00B5EDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D37ED1EC266605C800B5EDDD /* Build configuration list for PBXNativeTarget "Loggin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37ED1ED266605C800B5EDDD /* Debug */,
+				D37ED1EE266605C800B5EDDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
