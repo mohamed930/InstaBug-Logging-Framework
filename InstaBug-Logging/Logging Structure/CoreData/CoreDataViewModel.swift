@@ -76,4 +76,18 @@ public class CoreDataViewModel {
         return nil
     }
     
+    public func Delete(element: NSManagedObject) {
+        
+        let context = persistentContainer.viewContext
+        
+        context.delete(element)
+        
+        do {
+            try context.save()
+            print("Deleted Successfully!")
+        } catch let error as NSError {
+           print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
 }

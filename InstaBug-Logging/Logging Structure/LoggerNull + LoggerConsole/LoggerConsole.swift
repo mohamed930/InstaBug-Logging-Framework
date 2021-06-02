@@ -12,6 +12,7 @@ public struct LoggerConsole: LoggerProfile {
         
     }
     public let loggerProfileId = "hoffman.mohamed.logger.console"
+    
     public func writelog(level: String, message: String) {
         
         if message.count > 1000 {
@@ -23,8 +24,7 @@ public struct LoggerConsole: LoggerProfile {
             print("\(now): \(level) - \(mess)")
             
             // Save Logging Message into CoreData.
-            let ob = CoreDataViewModel()
-            ob.createLogging(loggingDate: now, loggingMessage: mess, loggingType: level)
+            self.CheckLogMessageCountInCoreData(loggingDate: now, loggingMessage: message, loggingType: level)
             
         }
         else {
@@ -33,8 +33,30 @@ public struct LoggerConsole: LoggerProfile {
             print("\(now): \(level) - \(message)")
             
             // Save Logging Message into CoreData.
-            let ob = CoreDataViewModel()
-            ob.createLogging(loggingDate: now, loggingMessage: message, loggingType: level)
+            self.CheckLogMessageCountInCoreData(loggingDate: now, loggingMessage: message, loggingType: level)
+        }
+        
+    }
+    
+    
+    
+    private func CheckLogMessageCountInCoreData(loggingDate: String , loggingMessage: String , loggingType: String) {
+        let ob = CoreDataViewModel()
+        
+        guard let rows = ob.fetch() else {
+            return
+        }
+        
+        if rows.count >= 1000 {
+            
+            // Delete earlest message and write new message
+            ob.Delete(element: rows[0])
+            ob.createLogging(loggingDate: loggingDate, loggingMessage: loggingMessage, loggingType: loggingType)
+            
+        }
+        else {
+            // Save Logging message normally.
+            ob.createLogging(loggingDate: loggingDate, loggingMessage: loggingMessage, loggingType: loggingType)
         }
         
     }

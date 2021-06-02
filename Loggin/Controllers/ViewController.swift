@@ -21,18 +21,23 @@ class ViewController: UIViewController {
         MyLogger.writeLog(logLevel: LogLevels.Debug, message: "Debug Message 1")
 
         MyLogger.writeLog(logLevel: LogLevels.Error, message: "Error Message 1")
+//
+//        MyLogger.writeLog(logLevel: LogLevels.Warn, message: "Warn Message 1")
         
-//        let ob = CoreDataViewModel()
-//
-//        guard let LoggingMessage = ob.fetch() else {
-//            print("❌ Failed Logging is Empty")
-//            return
-//        }
-//        LoggingMessageArr = LoggingMessage
-//
-//        for i in LoggingMessageArr {
-//            print("LogMess: \(i.value(forKeyPath: "loggingMessage") as! String)")
-//        }
+        let ob = CoreDataViewModel()
+
+        guard let LoggingMessage = ob.fetch() else {
+            print("❌ Failed Logging is Empty")
+            return
+        }
+        LoggingMessageArr = LoggingMessage
+
+        for i in LoggingMessageArr {
+            print("LogMess: \(i.value(forKeyPath: "loggingType") as! String)")
+        }
+        
+        
+//        MyLogger.Deleted_Write(logLevel: LogLevels.Warn, message: "Warn Message 1")
         
     }
 
