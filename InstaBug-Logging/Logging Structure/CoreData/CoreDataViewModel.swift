@@ -55,7 +55,7 @@ public class CoreDataViewModel {
         }
     }
     
-    public func fetch() -> [NSManagedObject]?{
+    public func fetch() -> [NSManagedObject]? {
             
         let context = persistentContainer.viewContext
         
@@ -88,6 +88,24 @@ public class CoreDataViewModel {
         } catch let error as NSError {
            print("Could not save. \(error), \(error.userInfo)")
         }
+    }
+    
+    public func DeleteAllLogging() {
+        
+        let context = persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "LoggingModel")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try context.execute(deleteRequest)
+            print("Deleted All Fields")
+//            try myPersistentStoreCoordinator.execute(deleteRequest, with: myContext)
+        } catch let error as NSError {
+            // TODO: handle the error
+            print("Could not delete. \(error), \(error.userInfo)")
+        }
+        
     }
     
 }

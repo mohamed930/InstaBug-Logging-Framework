@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MyLogger.addLogProfileToAllLevels(defaultLoggerProfile: LoggerConsole())
-
-        MyLogger.writeLog(logLevel: LogLevels.Debug, message: "Debug Message 1")
-
-        MyLogger.writeLog(logLevel: LogLevels.Error, message: "Error Message 1")
+//        MyLogger.addLogProfileToAllLevels(defaultLoggerProfile: LoggerConsole())
+//
+//        MyLogger.writeLog(logLevel: LogLevels.Debug, message: "Debug Message 1")
+//
+//        MyLogger.writeLog(logLevel: LogLevels.Error, message: "Error Message 1")
 //
 //        MyLogger.writeLog(logLevel: LogLevels.Warn, message: "Warn Message 1")
         
